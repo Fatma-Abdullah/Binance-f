@@ -1,0 +1,64 @@
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background-image: url(https://public.bnbstatic.com/image/cms/blog/20210923/4d355307-c090-47d9-aeaa-88bcdb17751e.png);
+   background-size: 100% 100%;
+}
+.btn-block{
+   padding:10px 20px;
+}
+.btn-dark {
+    color: #fff;
+    background-color: #0b0e11;
+    border-color: #212529;
+}
+#container {
+   min-height:100%;
+   position:relative;
+ 
+}
+#header {
+   /* background:#ff0; */
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:150px;   /* Height of the footer */
+   left: 0;
+
+}
+#footer .row{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.pulse {
+    animation: pulse-animation 1s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+  
+  
+@media screen and (max-width:500px) {
+    html, body {
+        background-size: 240% 98%;
+        background-position: center;
+    }
+}
